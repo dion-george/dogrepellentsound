@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fbf8ee; /* Background color */
+  min-height: 100vh; /* Minimum height to fit the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  margin: 0 auto; /* Remove default margin */
+  padding: 20px; /* Padding to avoid touching the screen edges */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.App-header {
+  width: 100%; /* Ensure it does not exceed the screen width */
+  max-width: 600px; /* Max width for larger screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: transparent; /* Transparent background for the header */
+  font-size: 18px; /* Slightly larger font size for readability */
+  font-weight: 400; /* Normal font weight */
+  line-height: 1.6; /* Increased line height for better readability */
+}
+
+img {
+  max-width: 90%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 50vh; /* Limit image height to 50% of the viewport */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+p {
+  width: 90%; /* Limit paragraph width */
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow for a slightly elevated look */
+  background-color: #228B22; /* Default color, can be changed based on state */
+}
+
+.button:active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Reduced shadow to simulate the button being pressed down */
+  transform: translateY(1px); /* Slight downward movement */
+}
+
+.sound-on {
+  background-color: #228B22; /* Forest green for ON state */
+}
+
+.sound-off {
+  background-color: #800000; /* Maroon for OFF state */
+}
+
+
